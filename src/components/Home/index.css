@@ -1,0 +1,16 @@
+.movies-container {
+  background-color: rgb(51, 52, 53);
+  color: white;
+  background-size: cover;
+}
+
+.popular-movies {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.main-heading {
+  color: white;
+  font-weight: 500;
+  margin-left: 15px;
+}

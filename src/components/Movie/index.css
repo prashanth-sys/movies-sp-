@@ -1,0 +1,18 @@
+.list-container {
+  margin: 5px;
+}
+.image {
+  width: 100%;
+}
+.movie-name {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+}
+.link {
+  text-decoration: none;
+}
+.popularity {
+  color: white;
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+.nav-container {
+  background-color: rgb(68, 86, 92);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-list-container {
+  display: flex;
+  list-style-type: none;
+}
+.list {
+  margin-right: 25px;
+}
+.input {
+  height: 27px;
+  width: 20%;
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.search-button {
+  background-color: rgb(163, 167, 168);
+  height: 27px;
+  border-width: 0px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 5px;
+  width: 70px;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
