@@ -6,6 +6,7 @@ specifiers:
   '@testing-library/user-event': ^13.5.0
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-loader-spinner: '4'
   react-router-dom: 5.2.0
   react-scripts: 5.0.1
   web-vitals: ^2.1.4
@@ -16,6 +17,7 @@ dependencies:
   '@testing-library/user-event': 13.5.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-loader-spinner: 4.0.0_react-dom@18.2.0+react@18.2.0
   react-router-dom: 5.2.0_react@18.2.0
   react-scripts: 5.0.1_react@18.2.0
   web-vitals: 2.1.4
@@ -8755,6 +8757,17 @@ packages:
 
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+    dev: false
+
+  /react-loader-spinner/4.0.0_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-RU2vpEej6G4ECei0h3q6bgLU10of9Lw5O+4AwF/mtkrX5oY20Sh/AxoPJ7etbrs/7Q3u4jN5qwCwGLRKCHpk6g==}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-refresh/0.11.0:

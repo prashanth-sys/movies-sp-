@@ -1,9 +1,9 @@
 import { Component } from "react";
 import Header from "../Header";
-import Movie from "../Movie"; // Import the Movie component
+import Movie from "../Movie";
 import "./index.css";
 
-class PopularMovies extends Component {
+class Home extends Component {
   state = { popularMovies: [] };
 
   componentDidMount() {
@@ -39,12 +39,13 @@ class PopularMovies extends Component {
   };
 
   render() {
-    const { popularMovies } = this.state; // Access popularMovies from state
+    const { popularMovies } = this.state;
     return (
       <div className="movies-container">
         <Header />
         <div>
           <h1 className="main-heading">Popular Movies</h1>
+          <p className="movies-type">This are Popular movies</p>
           <ul className="popular-movies">
             {popularMovies.map((movie) => (
               <Movie key={movie.id} popularMovieDetails={movie} />
@@ -55,5 +56,4 @@ class PopularMovies extends Component {
     );
   }
 }
-
-export default PopularMovies;
+export default Home;

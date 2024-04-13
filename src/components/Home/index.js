@@ -1,10 +1,14 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import Header from "../Header";
 import Movie from "../Movie";
 import "./index.css";
 
 class Home extends Component {
-  state = { popularMovies: [] };
+  state = {
+    popularMovies: [],
+    searchQuery: "",
+    filteredMovies: [],
+  };
 
   componentDidMount() {
     this.getMovies();
@@ -38,15 +42,30 @@ class Home extends Component {
     }
   };
 
+  handleInputChange = (event) => {
+    const query = event.target.value;
+    this.setState({ searchQuery: query }, this.filterMovies);
+  };
+
+  filterMovies = () => {
+    const { popularMovies, searchQuery } = this.state;
+    const filteredMovies = popularMovies.filter((movie) =>
+      movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    this.setState({ filteredMovies });
+  };
+
   render() {
-    const { popularMovies } = this.state;
+    const { popularMovies, searchQuery, filteredMovies } = this.state;
+    const moviesToDisplay = searchQuery ? filteredMovies : popularMovies;
+
     return (
       <div className="movies-container">
-        <Header />
+        <Header handleInputChange={this.handleInputChange} />
         <div>
           <h1 className="main-heading">Movies</h1>
           <ul className="popular-movies">
-            {popularMovies.map((movie) => (
+            {moviesToDisplay.map((movie) => (
               <Movie key={movie.id} popularMovieDetails={movie} />
             ))}
           </ul>
@@ -55,4 +74,5 @@ class Home extends Component {
     );
   }
 }
+
 export default Home;

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 
-const Header = () => (
+const Header = ({ handleInputChange }) => (
   <nav className="nav-container">
-    <h1>MovieDb</h1>
+    <h1 className="movie-logo">MovieDb</h1>
     <ul className="nav-list-container">
       <Link to="/" className="link">
         <li className="list">Home</li>
@@ -18,7 +18,12 @@ const Header = () => (
         <li className="list">Upcoming</li>
       </Link>
     </ul>
-    <input type="text" className="input" placeholder="Movie Search" />
+    <input
+      type="text"
+      className="input"
+      placeholder="Movie Search"
+      onChange={handleInputChange}
+    />
     <button className="search-button" type="button">
       Search
     </button>

@@ -1,0 +1,51 @@
+.movie-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 5px;
+}
+.movie-container {
+  background-color: rgb(51, 52, 53);
+  background-size: cover;
+  height: 150vh;
+}
+.home-page {
+  width: 20%;
+  margin-top: 15px;
+}
+.title {
+  color: white;
+  font-weight: 500;
+}
+.over-view {
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.back-button {
+  background-color: white;
+  color: rgb(51, 52, 53);
+  height: 50px;
+  width: 90px;
+  border-width: 0px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.details {
+  margin: 7px;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
