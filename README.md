@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### 
+Hii mam/sir 
+myself Prashanth 
+
+this assignment is recording movie web page like popularand toprated and etc 
+
+1 This movie app is made using react.js frame work 
+2 styled using css 
+3 some other tools i use to develop is navigation part like routers,loader,link etc 
+4 I made api for this movie details 
+5 with that api i feached the data in react.js to show in frentend 
+6 the components are reusable in this assignment 
+7 the movie details provide clear data about the move 
+8 it has 7 components
+9 this is recording this assignment 
+
+thankyou work india and nxtwave to providing this oppurtinity 
+
+Thankyou
